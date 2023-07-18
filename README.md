@@ -16,3 +16,6 @@ Stop Watch is basically used for calculating time of an activity. I have created
 * Integrated Development Environment: VSCode
 * Version Control System: Git
 * VCS Hosting: GitHub
+
+  ### Mobile Screen View
+![WhatsApp Image 2023-07-18 at 1 37 38 PM](https://github.com/MohammadVazeerAliKhan/StopWatchMvk/assets/119596941/2a35c4cf-1591-4385-94ba-c7fbebb7da1b)

@@ -3,6 +3,8 @@
   --textColor: white;
 }
 
+
+/* Setting basic styling to apply all over the elements */
 *{
   margin: 0;
   padding: 0;
@@ -25,6 +27,8 @@ body{
   gap: 5vh;
   font-size: 20px;
 }
+
+/* default styling for timer icon in app title */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -32,6 +36,7 @@ body{
   'GRAD' 200,
   'opsz' 48
 }
+
 #app-name{
   text-align: center;
   font-size: 42px;
@@ -42,6 +47,7 @@ body{
 
 }
 
+/*  circular timer container */
 .timer-display{
   border: 8px double black;
   border-radius: 50%;
@@ -54,20 +60,20 @@ body{
   color: var(--bgcolor);
 }
 
-
+/* Actual timer running */
 #timer{
   text-align: center;
   font-size: 56px;
 }
 
+/* positioning buttons container */
 .buttons{
   display: flex;
   flex-wrap: nowrap;
   gap: 30px;
-  justify-content: space-between;
-
 }
 
+/* Common Styling for buttons */
 .btn{
   font-family: 'Bebas Neue', sans-serif;
   padding: 4px 10px;
@@ -76,15 +82,16 @@ body{
   cursor: pointer;
 }
 
+/* pseudo classes for buttons */
 .btn:active, .btn:hover{
   background-color: var(--textColor) !important;
 }
-
+/* For better user experience logically, after clicking start there cant be any stop until stop or reset is pressed */
 .btn:disabled{
   cursor:not-allowed;
 }
 
-
+/* selective styles for buttons */
 #stop{
   background-color: red;
 }

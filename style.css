@@ -1,0 +1,96 @@
+:root{
+  --bgcolor: black;
+  --textColor: white;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  user-select: none;
+}
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: var(--bgcolor);
+    color: var(--textColor);
+    min-width: 400px;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  font-size: 20px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+#app-name{
+  text-align: center;
+  font-size: 42px;
+  margin-top: 10vh;
+  color: var(--textColor);
+  letter-spacing: 3px;
+
+
+}
+
+.timer-display{
+  border: 8px double black;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  color: var(--bgcolor);
+}
+
+
+#timer{
+  text-align: center;
+  font-size: 56px;
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: space-between;
+
+}
+
+.btn{
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 4px 10px;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:active, .btn:hover{
+  background-color: var(--textColor) !important;
+}
+
+.btn:disabled{
+  cursor:not-allowed;
+}
+
+
+#stop{
+  background-color: red;
+}
+#start{
+  background-color: lime;
+}
+#reset{
+  background-color: coral;
+}

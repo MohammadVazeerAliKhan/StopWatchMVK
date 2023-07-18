@@ -4,21 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stop Watch</title>
+  <!-- Adding Google fonts and icon -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Linking stylesheet  -->
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
+  <!-- Container for flexing things inside stop watch web page -->
   <div class="container">
-    <h1 id="app-name">Stop Watch <span class="material-symbols-outlined">
-timer
-</span></h1>
+    <!-- App Name --> 
+    <h1 id="app-name">Stop Watch <span class="material-symbols-outlined">timer</span></h1>
     <div class="timer-display">
+      <!-- Actual stop watch timer -->
       <h1 id="timer">00h : 00m : 00s</h1>
     </div>
     <div class="buttons">
+      <!-- Controls for starting, stopping or resetiting timer -->
       <button class="btn" id="stop">Stop</button>
       <button class="btn" id="start">Start</button>
       <button class="btn" id="reset">Reset</button>
